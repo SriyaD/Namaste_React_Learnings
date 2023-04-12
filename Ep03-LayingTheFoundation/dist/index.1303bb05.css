@@ -1,0 +1,97 @@
+#heading {
+  color: red;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: auto;
+  background-color: #0ff;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.left {
+  margin-left: 40px;
+}
+
+.left img {
+  width: 50px;
+  cursor: pointer;
+  margin: 10px 40px 0 10px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.center .input {
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.input:focus {
+  border: 3px solid #dc143c;
+}
+
+.center button {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+button:hover {
+  color: #fff;
+  background-color: green;
+}
+
+.right {
+  margin-right: 40px;
+}
+
+.right img {
+  width: 50px;
+  cursor: pointer;
+  margin: 10px 20px 0 0;
+}
+
+@media screen and (max-width: 770px) {
+  .center .input {
+    width: 200px;
+    transition: all .5s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left {
+    margin-left: 5px;
+  }
+
+  .left img {
+    margin: 10px 10px 0;
+  }
+
+  .right {
+    margin-right: 5px;
+  }
+
+  .center .input {
+    width: 100px;
+    transition: all .5s;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .center .input {
+    width: 70px;
+    transition: all .5s;
+  }
+}
+
+/*# sourceMappingURL=index.1303bb05.css.map */
