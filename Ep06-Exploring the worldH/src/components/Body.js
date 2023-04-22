@@ -14,7 +14,7 @@ const Body = () => {
   const [errorMsg, setErrorMsg] = useState('');
 
   useEffect(()=>{
-    console.log("useEffect")
+    console.log("useEffect");
     getRestaurants();
   },[]);
 

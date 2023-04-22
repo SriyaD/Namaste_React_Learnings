@@ -1,4 +1,4 @@
-import { SHIMMER_RES_CARDS_COUNT } from '../config';
+import { SHIMMER_RES_CARDS_COUNT } from "../config";
 
 const CardShimmer = () => {
   return (
@@ -9,16 +9,16 @@ const CardShimmer = () => {
       <div className="shimmer-details stroke animate "></div>
     </div>
   );
-}
+};
 
 const Shimmer = () => {
   return (
     <div className="shimmer-container">
-      {Array.from({length:SHIMMER_RES_CARDS_COUNT}).map((element, index) => {
-        return <CardShimmer key ={index} />
-      }) }
-    </div>   
-  )
-}
+      {Array.from({ length: SHIMMER_RES_CARDS_COUNT }).map((element, index) => {
+        return <CardShimmer key={index} />;
+      })}
+    </div>
+  );
+};
 
 export default Shimmer;
